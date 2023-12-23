@@ -1,0 +1,28 @@
+import random
+
+#User Input
+you = eval(input("scissor (0), rock (1), paper (2): "))
+
+
+#Randomizer
+com = random.randint(0,2)
+
+#Statements
+if you == 0 and com == 0:
+    print("The computer is scissor. You are scissor too. It is a draw.")
+elif you == 1 and com == 1:
+    print("The computer is rock. You are rock too. It is a draw.")
+elif you == 2 and com == 2:
+    print("The computer is paper. You are paper too. It is a draw.")
+elif you == 0 and com == 1:
+    print("The computer is rock. You are scissor. You lost.")
+elif you == 0 and com == 2:
+    print("The computer is paper. You are scissor. You won.")
+elif you == 1 and com == 0:
+    print("The computer is scissor. You are rock. You won.")
+elif you == 1 and com == 2:
+    print("The computer is paper. You are rock. You lost.")
+elif you == 2 and com == 0:
+    print("The computer is scissor. You are paper. You lost.")
+elif you == 2 and com == 1:
+    print("The computer is rock. You are paper. You won.")
